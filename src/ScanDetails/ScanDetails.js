@@ -15,7 +15,7 @@ const ScanDetails = (props) => {
     // console.log(data.breaches);
 
     useEffect(() => {
-        axios.post(proxyUrl+apiUrl, { email: props.email })
+        axios.post(apiUrl, { email: props.email })
             .then(res => {
                 setData(res.data);
                 // console.log(res.data);
